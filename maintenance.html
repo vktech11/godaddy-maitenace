@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Under Maintenance</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.box {
+    background: #1f2937;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    color: #d1d5db;
+}
+
+.gear {
+    font-size: 60px;
+}
+
+.loader {
+    margin: 25px auto;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #374151;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <div class="gear">⚙️</div>
+    <h1>Site Under Maintenance</h1>
+    <p>
+        We are currently improving our website.
+        Please check back soon.
+    </p>
+
+    <div class="loader"></div>
+
+    <small>© 2026 Your Website</small>
+</div>
+
+</body>
+</html>
